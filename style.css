@@ -169,12 +169,13 @@ nav .header-menu ul li a {
 
 /* feature section style */
 
-.feature{
+.feature {
     display: flex;
     gap: 2rem;
     margin: 1.5rem;
     align-items: center;
 }
+
 .feature-title {
     color: #0A0826;
     font-family: Poppins;
@@ -200,6 +201,38 @@ nav .header-menu ul li a {
     border-radius: 0.5rem;
     border: none;
 }
+
+
+/* footer section */
+footer {
+    text-align: center;
+    background: #0A0826;
+    padding: 3rem 0;
+
+}
+
+.footer h3 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer h4,p{
+    color: #D9DBE1;
+    font-family: Manrope;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.foot-icon{
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 2rem;
+    padding: 3rem;
+}
+
 /* responsive style */
 @media screen and (max-width:576px) {
     .hide {
@@ -214,8 +247,9 @@ nav .header-menu ul li a {
         align-items: center;
     }
 
-    
-    .banner, .feature {
+
+    .banner,
+    .feature {
         flex-direction: column-reverse;
         justify-content: center;
     }
@@ -262,7 +296,8 @@ nav .header-menu ul li a {
 @media screen and (min-width:577px) and (max-width:960px) {
 
     nav,
-    .banner {
+    .banner,
+    .feature {
 
         flex-direction: column;
         text-align: center;
@@ -300,5 +335,9 @@ nav .header-menu ul li a {
 
     .card-9 {
         grid-column: span 2;
+    }
+
+    .feature-img img {
+        width: 100%;
     }
 }

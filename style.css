@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 80%;
+    margin: 4rem auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo h3 {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+nav .header-menu ul {
+    display: flex;
+
+}
+
+nav .header-menu  li {
+    list-style-type: none;
+    margin-right: 1.3rem;
+
+}
+
+nav .header-menu ul li a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+
+/* responsive style */
+@media screen and (max-width:576px) {
+  .hide{
+    display: none;
+  }
+  .fos{
+    font-size: 2rem;
+  }
+  nav{
+    align-items: center;
+  }
+    
+}
+@media screen and (min-width:577px) and (max-width:960px) {
+    nav{
+        
+        flex-direction: column;
+        text-align: center;
+    }
+    header{
+        width: 100%;
+    }
+    .header-menu{
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+        
+    }
+}

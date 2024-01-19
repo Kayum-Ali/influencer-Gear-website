@@ -167,7 +167,39 @@ nav .header-menu ul li a {
     background-color: #fff;
 }
 
+/* feature section style */
 
+.feature{
+    display: flex;
+    gap: 2rem;
+    margin: 1.5rem;
+    align-items: center;
+}
+.feature-title {
+    color: #0A0826;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.feature-description {
+    color: #6C6C6C;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.feature-btn {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 1.8rem;
+    background: #E02C6D;
+    border-radius: 0.5rem;
+    border: none;
+}
 /* responsive style */
 @media screen and (max-width:576px) {
     .hide {
@@ -182,8 +214,10 @@ nav .header-menu ul li a {
         align-items: center;
     }
 
-    .banner {
+    
+    .banner, .feature {
         flex-direction: column-reverse;
+        justify-content: center;
     }
 
     .banner-contant,
